@@ -147,7 +147,7 @@ header .sub-header .social-icone ul li { display: inline-block !important; text-
 header .sub-header .social-icone ul li:last-child { margin-right: 0; }
 header .sub-header .social-icone ul li a { color: #313e5b; }
 header .sub-header .social-icone ul li a:hover { color: #437eeb; }
-header .navbar-light .navbar-brand img.logo { width: 60px; }
+header .navbar-light .navbar-brand img.logo { width: 55px; }
 
 /* Header Bottom */
 header .main-header { padding: 0 162px; }
@@ -1636,9 +1636,9 @@ Testimonial Circle
 /*----------------------------------------
     Pricing Table
   ----------------------------------------*/
-.iq-pricing { border: 1px solid #d7faff; border-radius: 5px; margin-bottom: 30px; padding: 10px; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.iq-pricing { border: 3px solid #000; border-radius: 5px; margin-bottom: 30px; padding: 10px; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 .iq-pricing:hover { border-color: #eaf1ff; box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); margin-top: -15px; }
-.iq-pricing .priceing-title { background: #d7faff; padding: 30px; border-radius: 5px; }
+.iq-pricing .priceing-title { background: #eff1fe; padding: 30px; border-radius: 5px; }
 .iq-pricing:hover .priceing-title { background: #eaf1ff; }
 .iq-pricing  .priceing-description { padding: 45px 30px 30px; }
 .iq-pricing .priceing-description ul li { list-style: none; margin-bottom: 10px; }
@@ -1671,7 +1671,8 @@ Testimonial Circle
 .iq-pb-40 { padding-bottom: 40px; }
 .iq-pb-30 { padding-bottom: 30px; }
 .iq-ptb-80 { padding: 80px 0; }
-.xamin-blue-bg { background-color: #1d2d49 !important }
+.xamin-blue-bg { background-image: url(../images/bg-3.png) !important; background-position: center !important;  background-repeat: no-repeat !important;  background-size: cover !important;}
+
 .xamin-primary-bg { background-color: #3f7be7 !important; }
 .primary-color { color: #3f7be7 !important; }
 
@@ -2253,3 +2254,9 @@ transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;
 .iq-chart-sports .vc_chart .vc_chart-legend {flex: 1;;
 }
 .iq-minimal-tab .iq-portfolio{margin-bottom: 30px;}
+
+
+.text-bottom-color {
+  background: linear-gradient(transparent 50%, #f1c4c4 50%);
+    margin: 0 30px;
+}
