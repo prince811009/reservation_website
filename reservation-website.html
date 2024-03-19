@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="柴柴網頁設計">
     <meta property="og:title" content="柴柴網頁設計">
-    <meta property="og:image" content="https://chaichaiweb.com/assets/images/home/home-fullscreen-4.jpg">
+    <meta property="og:image" content="https://chaichaiweb.com/images/home/home-point-1.png">
     <meta property="og:description" content="形象網站設計、品牌預約官網、網頁設計、客製化網站架設、LOGO設計">
     <meta property="og:url" content="https://chaichaiweb.com/">
 
@@ -82,8 +82,9 @@
                                         <a href="about-us.html" class="isubmenu">關於我們</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a class="isubmenu">服務項目</a> <i class="fa fa-angle-down toggledrop" aria-hidden="true"></i>
-                                        <ul class="sub-menu">
+                                        <!-- 選項開闔 -->
+                                        <a class="isubmenu accordion-title" data-tab="item01">服務項目</a> <i class="fa fa-angle-down toggledrop" aria-hidden="true"></i>                                        
+                                        <ul class="sub-menu accordion-content" id="item01">
                                             <li class="menu-item"> <a href="template-web.html">快速套版形象網站</a> </li>
                                             <li class="menu-item"> <a href="custom-design.html">半客製化網頁設計</a> </li>
                                             <li class="menu-item"> <a href="reservation-website.html">品牌預約官網建置</a> </li>
@@ -573,6 +574,22 @@
   <script src="js/revslider-custom.js"></script>
   <!-- Custom JS-->
   <script src="js/xamin-custom.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $(".accordion-title").click(function(e){
+            var accordionitem = $(this).attr("data-tab");
+            $("#"+accordionitem).slideToggle().parent().siblings().find(".accordion-content").slideUp();
+    
+            $(this).toggleClass("active-title");
+            $("#"+accordionitem).parent().siblings().find(".accordion-title").removeClass("active-title");
+          
+            $("i.fa-chevron-down",this).toggleClass("chevron-top");
+            $("#"+accordionitem).parent().siblings().find(".accordion-title i.fa-chevron-down").removeClass("chevron-top");
+        });
+    });     
+</script>
+
 </body>
 
 </html>
